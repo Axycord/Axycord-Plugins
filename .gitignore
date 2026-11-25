@@ -1,0 +1,14 @@
+.gradle/
+.kotlin/
+**/build/
+local.properties
+keystore.properties
+*.jks
+*.keystore
+__pycache__/
+*.pyc
+.catalog-cache/
+builds-out/
+catalog-out/
+emojireplace/src/main/assets/emoji-art.emojipack
+emojireplace/src/main/assets/emoji-index/

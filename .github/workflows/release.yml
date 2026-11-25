@@ -1,0 +1,78 @@
+name: Verify and Publish Plugins
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: plugins-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: android-actions/setup-android@v3
+        with:
+          cmdline-tools-version: '14742923'
+          packages: platform-tools
+          log-accepted-android-sdk-licenses: false
+      - run: sdkmanager 'platforms;android-37.0' 'build-tools;36.0.0'
+      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/wrapper-validation@v4
+      - name: Test catalog validation
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Verify published APKs and restore emoji build assets
+        run: python3 scripts/release.py --prepare-assets
+      - name: Check sources and Android compatibility
+        run: ./gradlew lintDebug assembleDebug :emojireplace:testDebugUnitTest --max-workers=2
+      - name: Generate verified catalog
+        run: python3 scripts/release.py catalog-out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: verified-plugin-catalog
+          path: catalog-out/plugins.json
+          if-no-files-found: error
+
+  publish:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: verify
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: verified-plugin-catalog
+          path: catalog-out
+      - name: Publish builds branch
+        run: |
+          if git ls-remote --exit-code origin refs/heads/builds >/dev/null; then
+            git fetch origin builds
+            git worktree add builds-out origin/builds
+            git -C builds-out switch -C builds
+          else
+            git worktree add --orphan -b builds builds-out
+          fi
+          cp catalog-out/plugins.json builds-out/plugins.json
+          git -C builds-out config user.name 'github-actions[bot]'
+          git -C builds-out config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C builds-out add plugins.json
+          if ! git -C builds-out diff --cached --quiet; then
+            git -C builds-out commit -m 'chore: update verified plugin catalog'
+            git -C builds-out push origin builds
+          fi
+      - name: Refresh catalog CDN cache
+        run: curl --retry 3 -fsS 'https://purge.jsdelivr.net/gh/Axycord/Axycord-Plugins@builds/plugins.json'

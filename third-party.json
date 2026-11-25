@@ -1,0 +1,72 @@
+[
+  {
+    "authors": [
+      "Maarij"
+    ],
+    "versionCode": 1,
+    "versionName": "1.0.0",
+    "pluginApiMinimum": 3,
+    "signerSha256": "fff3c3b617d916125e1f457892ffa35d01042b1e2c6c1cb99e14878d520cb057",
+    "id": "axycord.platformindicators",
+    "packageName": "mmaarij.axycord.aplatformindicators",
+    "name": "APlatformIndicators",
+    "description": "Shows active Discord client platforms in chat and in the profile badge row.",
+    "apkUrl": "https://github.com/mmaarij123/APlatformIndicators-Axycord/releases/download/v1.0.0/APlatformIndicators-Axycord-v1.0.0-debug.apk",
+    "size": 77718,
+    "sha256": "cb8c0f34d7109bf43eb638b847e941c2b1055d9c2a714ee06645392ca3c391fc",
+    "sourceUrl": "https://github.com/mmaarij123/APlatformIndicators-Axycord/tree/419cbd392d659b722e187314dd7755586cf1af8a"
+  },
+  {
+    "authors": [
+      "Maarij"
+    ],
+    "versionCode": 1,
+    "versionName": "1.0.0",
+    "pluginApiMinimum": 3,
+    "signerSha256": "fff3c3b617d916125e1f457892ffa35d01042b1e2c6c1cb99e14878d520cb057",
+    "id": "axycord.emojireplace",
+    "packageName": "mmaarij.axycord.emojireplace",
+    "name": "Emoji Replace (Compressed)",
+    "description": "All 13 offline emoji packs in a smaller download (49.1 MiB).",
+    "apkUrl": "https://github.com/mmaarij123/emoji-replace-axycord/releases/download/v1.0.0/Emoji-Replace-Axycord-1.0.0.apk",
+    "size": 51440788,
+    "sha256": "f035dd513e53a2c76295fb866f3df835739f018774d1c0e5b9f5cb7d21b31c17",
+    "sourceUrl": "https://github.com/mmaarij123/emoji-replace-axycord/tree/5977e491c8c0a8ced3951ec1351609c1aeaec844",
+    "variant": "compressed"
+  },
+  {
+    "authors": [
+      "Maarij"
+    ],
+    "versionCode": 1,
+    "versionName": "1.0.0",
+    "pluginApiMinimum": 3,
+    "signerSha256": "fff3c3b617d916125e1f457892ffa35d01042b1e2c6c1cb99e14878d520cb057",
+    "id": "axycord.emojireplace",
+    "packageName": "mmaarij.axycord.emojireplace",
+    "name": "Emoji Replace (Full)",
+    "description": "All 13 offline emoji packs with higher-resolution artwork (141.7 MiB). Requires a client with large plugin download support.",
+    "apkUrl": "https://github.com/mmaarij123/emoji-replace-axycord/releases/download/v1.0.0/Emoji-Replace-Axycord-1.0.0-Full.apk",
+    "size": 148591903,
+    "sha256": "44b3d19f91828feaf9b020971e177f041a525c18910e96b9cf4cdd300d040be8",
+    "sourceUrl": "https://github.com/mmaarij123/emoji-replace-axycord/tree/5977e491c8c0a8ced3951ec1351609c1aeaec844",
+    "variant": "full"
+  },
+  {
+    "authors": [
+      "Maarij"
+    ],
+    "versionCode": 1,
+    "versionName": "1.0.0",
+    "pluginApiMinimum": 3,
+    "signerSha256": "fff3c3b617d916125e1f457892ffa35d01042b1e2c6c1cb99e14878d520cb057",
+    "id": "axycord.permissionsviewer",
+    "packageName": "mmaarij.axycord.permissionsviewer",
+    "name": "Permissions Viewer",
+    "description": "Inspect server roles, member permissions, and channel overwrites.",
+    "apkUrl": "https://github.com/mmaarij123/axycord-permissions-viewer/releases/download/v1.0.0/Axycord-PermissionsViewer-debug.apk",
+    "size": 915271,
+    "sha256": "c4f0c227223d61ac4e82710d1e28eba8555ff8fe2a2a649de1551028ea9092c1",
+    "sourceUrl": "https://github.com/mmaarij123/axycord-permissions-viewer/tree/e67020661e0943cb1f83337f985f0d27fc6d91cf"
+  }
+]
