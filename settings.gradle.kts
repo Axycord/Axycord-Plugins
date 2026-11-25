@@ -25,4 +25,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "axycord-plugins"
-include(":platformindicators", ":emojireplace", ":permissionsviewer")
+include(":platformindicators", ":emojireplace", ":permissionsviewer", ":messagelogger", ":reviewdb", ":translate", ":lastfm")

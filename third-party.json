@@ -68,5 +68,73 @@
     "size": 915271,
     "sha256": "c4f0c227223d61ac4e82710d1e28eba8555ff8fe2a2a649de1551028ea9092c1",
     "sourceUrl": "https://github.com/mmaarij123/axycord-permissions-viewer/tree/e67020661e0943cb1f83337f985f0d27fc6d91cf"
+  },
+  {
+    "id": "axycord.messagelogger",
+    "packageName": "mmaarij.axycord.messagelogger",
+    "name": "Message Logger",
+    "description": "Retain deleted messages locally and inspect edit history with native Discord typography.",
+    "authors": [
+      "Maarij"
+    ],
+    "versionCode": 1,
+    "versionName": "1.0.0",
+    "pluginApiMinimum": 3,
+    "apkUrl": "https://github.com/mmaarij123/axycord-message-logger/releases/download/v1.0.0/Axycord-MessageLogger-v1.0.0.apk",
+    "sha256": "4af97b8e6dd6c6ba82cdb215c3ff4e8290975495dab47104f8767226bad6f6c5",
+    "size": 37160,
+    "signerSha256": "76b3e4048dc864b09ea7e6f118beb93beb7697e3305504a0443538f42a133468",
+    "sourceUrl": "https://github.com/mmaarij123/axycord-message-logger/tree/72114fd5b53ce52006c8e6278f6925f53624d61b"
+  },
+  {
+    "id": "axycord.reviewdb",
+    "packageName": "mmaarij.axycord.reviewdb",
+    "name": "ReviewDB",
+    "description": "Read user/server reviews, vote and manage reviews using native Discord fonts and profile colors.",
+    "authors": [
+      "Maarij"
+    ],
+    "versionCode": 1,
+    "versionName": "1.0.0",
+    "pluginApiMinimum": 3,
+    "apkUrl": "https://github.com/mmaarij123/axycord-reviewdb/releases/download/v1.0.0/Axycord-ReviewDB-v1.0.0.apk",
+    "sha256": "78acff6070b222e8fe288633c7b9f7eba749f83379ec777972f04ba78033a41b",
+    "size": 701739,
+    "signerSha256": "76b3e4048dc864b09ea7e6f118beb93beb7697e3305504a0443538f42a133468",
+    "sourceUrl": "https://github.com/mmaarij123/axycord-reviewdb/tree/b18a08945bf28595ddfcdc9e0906987b3a3c9e1a"
+  },
+  {
+    "id": "axycord.translate",
+    "packageName": "mmaarij.axycord.translate",
+    "name": "Translate",
+    "description": "Translate selected messages and send translated text with native Axycord menus and dialogs.",
+    "authors": [
+      "Maarij"
+    ],
+    "versionCode": 1,
+    "versionName": "1.0.0",
+    "pluginApiMinimum": 3,
+    "apkUrl": "https://github.com/mmaarij123/axycord-translate/releases/download/v1.0.0/Axycord-Translate-v1.0.0.apk",
+    "sha256": "119ae063c0f3dcc44f79e8626b3acd5a9bb74d073c653a24a8201d0cb1d7322d",
+    "size": 29828,
+    "signerSha256": "76b3e4048dc864b09ea7e6f118beb93beb7697e3305504a0443538f42a133468",
+    "sourceUrl": "https://github.com/mmaarij123/axycord-translate/tree/7e88cd8524c8fa5cc8abb1c3f0021fdfab5ca9fe"
+  },
+  {
+    "id": "axycord.lastfm",
+    "packageName": "mmaarij.axycord.lastfm",
+    "name": "Last.fm Rich Presence",
+    "description": "Share Last.fm now playing through Axycord rich presence and native settings.",
+    "authors": [
+      "Maarij"
+    ],
+    "versionCode": 1,
+    "versionName": "1.0.0",
+    "pluginApiMinimum": 3,
+    "apkUrl": "https://github.com/mmaarij123/axycord-lastfm/releases/download/v1.0.0/Axycord-Lastfm-v1.0.0.apk",
+    "sha256": "3a923812dd0293d1b0e7f29a34779680eb6a4535f113e4da8ffd51a686a363f3",
+    "size": 35146,
+    "signerSha256": "76b3e4048dc864b09ea7e6f118beb93beb7697e3305504a0443538f42a133468",
+    "sourceUrl": "https://github.com/mmaarij123/axycord-lastfm/tree/57d093d52df13de00cead8547b42a8143206e3e5"
   }
 ]

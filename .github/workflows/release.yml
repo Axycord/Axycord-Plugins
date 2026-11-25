@@ -36,7 +36,7 @@ jobs:
       - name: Verify published APKs and restore emoji build assets
         run: python3 scripts/release.py --prepare-assets
       - name: Check sources and Android compatibility
-        run: ./gradlew lintDebug assembleDebug :emojireplace:testDebugUnitTest --max-workers=2
+        run: ./gradlew lintDebug assembleDebug testDebugUnitTest --max-workers=2
       - name: Generate verified catalog
         run: python3 scripts/release.py catalog-out
       - uses: actions/upload-artifact@v4

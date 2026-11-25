@@ -12,3 +12,5 @@ builds-out/
 catalog-out/
 emojireplace/src/main/assets/emoji-art.emojipack
 emojireplace/src/main/assets/emoji-index/
+*.p12
+*.pfx

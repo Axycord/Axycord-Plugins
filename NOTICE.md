@@ -23,3 +23,12 @@ The wrapper is the official Gradle 9.7.0 wrapper with its Apache-2.0 license.
 Catalog APKs are the original maintainer release assets, not re-signed builds of
 this collection. Source links in catalog entries point to their release commits.
 The separately distributed Axycord host and SDK retain AGPL-3.0-only.
+
+## Four additional Axycord ports
+
+- `messagelogger`: https://github.com/mmaarij123/axycord-message-logger/tree/72114fd5b53ce52006c8e6278f6925f53624d61b .
+- `reviewdb`: https://github.com/mmaarij123/axycord-reviewdb/tree/b18a08945bf28595ddfcdc9e0906987b3a3c9e1a .
+- `translate`: https://github.com/mmaarij123/axycord-translate/tree/7e88cd8524c8fa5cc8abb1c3f0021fdfab5ca9fe .
+- `lastfm`: https://github.com/mmaarij123/axycord-lastfm/tree/57d093d52df13de00cead8547b42a8143206e3e5 .
+
+These ports originate in the same pinned Microcord collection above and use the Axycord template. Message Logger, ReviewDB and Last.fm retain GPL-3.0; Translate retains Tyman's CC BY-NC-SA 4.0 attribution and terms. Their individual notices and licenses are also included in the release APKs.
