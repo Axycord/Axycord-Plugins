@@ -16,13 +16,17 @@ Imported source snapshots:
 
 Kotlin implementations, resources, tests, artwork tooling and module license/
 provenance files are retained. Build scripts and README instructions are adapted
-for this multi-module collection. Each imported plugin retains its MIT LICENSE.
+for this multi-module collection. These three imported plugins retain their MIT LICENSE files.
 Inherited template build files retain the status described in the module notices.
 The wrapper is the official Gradle 9.7.0 wrapper with its Apache-2.0 license.
 
 Catalog APKs are the original maintainer release assets, not re-signed builds of
 this collection. Source links in catalog entries point to their release commits.
 The separately distributed Axycord host and SDK retain AGPL-3.0-only.
+
+Community listings retain their actual authorship, licenses and notices. Catalog
+maintainership does not replace a third-party developer's attribution. Submission
+and update instructions are documented in CONTRIBUTING.md.
 
 ## Four additional Axycord ports
 

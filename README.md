@@ -24,6 +24,22 @@ but filters out Full. Full is listed in the catalog and can be installed manuall
 from its GitHub release. Both browser listings and same-version variant switching
 require the client's large-download/variant-support update.
 
+## Community and third-party plugins
+
+Other developers are welcome to build Axycord plugins and submit them for Browse
+Plugins. Start with the [Axycord Plugin Template](https://github.com/Axycord/Axycord-Plugin-Template),
+publish a signed APK in your own GitHub repository, and submit a pull request adding
+its verified metadata to `third-party.json`.
+
+Third-party listings retain their real author names, licenses and original notices.
+Maarij maintains the catalog; each plugin's developers maintain their own work.
+Plugins execute inside Axycord's process. Catalog CI checks APK integrity and
+discovery metadata; maintainers review source and compatibility before merging.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for required fields, typography, licensing,
+signing, updates and the publication process. A catalog-only submission can keep
+its source in the author's repository; copying it into this collection is optional.
+
 ## Catalog publication
 
 The app reads the `builds` branch through:
